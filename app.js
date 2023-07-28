@@ -20,7 +20,6 @@ app.use(express.static('public'));
 app.post('/api/movies', upload.single('image'), (req, res) => {
     const { name, description } = req.body;
     const imagePath = req.file.path;
-
     const movie = { id: Date.now(), name, image: imagePath, description };
     movies.push(movie);
     res.json({ success: true });
