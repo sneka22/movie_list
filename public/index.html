@@ -1,2 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Listing</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body bgcolor="plum">
+        <center><img src="movie2.jpg"></center>
+        <h1>LIST YOUR MOVIES</h1>
+        <div class="movie-form">
+            <input type="text" id="name" placeholder="Movie Name"><br>
+            <input type="file" id="image"><br>
+            <textarea id="description" placeholder="Description"></textarea><br>
+            <center><button onclick="addMovie()" style="width: 100px;">Add Movie</button></center>
+        </div>
+        <div class="movie-list">
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
